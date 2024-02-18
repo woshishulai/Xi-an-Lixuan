@@ -1,0 +1,43 @@
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+// 文本溢出 一行
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@mixin ellipsis2 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+}
+
+$phone: 414px;
+$book: 768px;
+$md: 1250px;
+
+.mg {
+    margin-top: 0 !important;
+}
+
+* {
+    font-size: 16px;
+    // font-family: 'font1';
+    // zoom: 90%;
+}
+
+input {
+    &:focus-visible {
+        outline: none;
+    }
+}

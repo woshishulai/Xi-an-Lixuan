@@ -1,0 +1,31 @@
+.slick-dots {
+    @include flex-row;
+    align-items: center;
+    gap: 24px;
+}
+.ant-carousel .slick-dots-bottom {
+    bottom: 50px;
+}
+.ant-carousel .slick-dots li {
+    width: 6px;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 6px;
+}
+.ant-carousel .slick-dots li.slick-active {
+    width: 12px;
+    height: 12px;
+}
+.ant-carousel .slick-dots li.slick-active button {
+    display: none;
+}
+.ant-carousel .slick-dots li button::after {
+    display: none;
+}
+
+.ant-modal .ant-modal-content {
+    @include flex-col;
+    align-items: center;
+    padding: 40px;
+}
